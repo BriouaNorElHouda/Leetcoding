@@ -1,0 +1,8 @@
+class Solution:
+     def maximumSwap(self, num: int) -> int:
+        if 0 <= num <= 10**8:
+            tab = [int(digit) for digit in str(num)]
+            i = tab.index(max(tab))
+            tab[0], tab[i] = tab[i], tab[0]
+            res = int(''.join(map(str, tab)))
+            return res
