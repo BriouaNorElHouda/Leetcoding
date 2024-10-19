@@ -1,0 +1,13 @@
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        if -2**31 <= x <= 2**31 - 1:
+            tab=  [digit for digit in str(x)]
+            tab2 = []
+            a = len(tab)
+
+            for i in range(a):
+                tab2.append(tab[a - 1 - i])  # Fill tab2 in reverse order
+            
+            return tab == tab2  # Directly return the comparison result
+        
+        return False 
