@@ -1,0 +1,17 @@
+
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        c = 0 
+        a = len(nums)
+        
+        if 1 <= a <= 3 * 10**4:
+            for i in range(a):
+                if -100 <= nums[i] <= 100:
+                    if i == 0 or nums[i] != nums[i - 1]:
+                        nums[c] = nums[i]
+                        c += 1
+
+        if c == 1:
+            return nums[0]
+        
+        return c
