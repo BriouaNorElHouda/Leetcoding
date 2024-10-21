@@ -1,2 +1,15 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
+
+     c=0
+       
+     a=  len(s)
+     seen={}
+
+     if 0 <= a <= 5 * 10**4:
+           for i in range(a):
+             if (s[i] not in seen):
+              seen[s[i]] = True
+              c+=1
+             
+     return c
