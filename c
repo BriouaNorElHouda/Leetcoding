@@ -1,1 +1,1 @@
-no leetcodes today
+no leetcodes today 24 oct
