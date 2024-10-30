@@ -1,0 +1,17 @@
+1768.
+
+def mergeAlternately(word1: str, word2: str) -> str:
+    merged_string = []
+    len1, len2 = len(word1), len(word2)
+    min_len = min(len1, len2)
+    
+    for i in range(min_len):
+        merged_string.append(word1[i])
+        merged_string.append(word2[i])
+    
+    if len1 > len2:
+        merged_string.append(word1[min_len:])
+    else:
+        merged_string.append(word2[min_len:])
+    
+    return ''.join(merged_string)
