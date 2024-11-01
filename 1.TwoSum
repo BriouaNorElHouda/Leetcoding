@@ -13,6 +13,6 @@ class Solution:
                     else:
                         print(f"{nums[i]} is not in range")
             else:
-                print("Target is out of range")
+                print("check the Target it is out of range")
         else:
-            print("nums.length is not in range")
+            print("nums.length is out of range")
